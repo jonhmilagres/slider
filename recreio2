@@ -17,26 +17,19 @@
 
    #tela_inicial {
     background-size: 100% 100%; /* a background fica estendida de ambos lados*/
-    position: relative;
     height: 600px;
     width: 100%;
     background-image: url('img/background.jpg');
+
   
    }
    #logo { /*caracteristicas da imagem da logomarca */
     height: 200px;
     width: 300px;
     margin: 5em auto;
-    display: inline-block;
-   }
-    @media screen and (min-width: 0px) and (max-width: 1200px) {
 
-       #logo { /*caracteristicas da imagem da logomarca */
-       height: 130px;
-       width: 200px;
-       margin: 5em auto;
-   }   
- .nav-wrapper{
+   }
+    .nav-wrapper{
   background-color: black;
   opacity: 0.4;
  }
@@ -49,6 +42,17 @@
   top:0;
  }
 
+
+
+   
+    @media screen and (min-width: 0px) and (max-width: 500px) {
+
+       #logo { /*caracteristicas da imagem da logomarca */
+       height: 130px;
+       width: 200px;
+       margin: 5em auto;
+   }   
+ 
 
   }
    
@@ -63,7 +67,7 @@
   <div class="row" id="tela_inicial"  background="img/background.jpg">
     <div class="center responsive-img div_logo cols12">
       <div class="navbar-fixed">
-        <nav class="transparent z-depth-0"><!-- navbar content here   --> 
+       
          <div class="nav-wrapper">
            <a href="#" data-activates="slide-out" class="btn-floating btn-large waves-effect waves-light red sidenav-trigger"><i class="material-icons">menu</i></a>
          </div> 
